@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/dark_green"
+        android:elevation="4dp"
+        />
+
+    <!-- Example Child Views -->
+    <TextView
+        android:id="@+id/sampleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingStart="8dp"
+        android:textSize="18dp"
+        android:text="Track Your Footprint" />
+
+    <!-- First Button with Margin from Top -->
+
+    <!-- Second Button with Equal Gap -->
+    <Button
+        android:id="@+id/transpotation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/home_buttons"
+        android:text="Transpotation"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/electricity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/home_buttons"
+        android:text="Electricity"
+        android:textColor="#FFFFFF" />
+
+    <!-- Third Button with Equal Gap -->
+    <Button
+        android:id="@+id/food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/home_buttons"
+        android:text="Food"
+        android:textColor="#FFFFFF" />
+
+    <!-- Fourth Button with Margin from Bottom -->
+    <Button
+        android:id="@+id/other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/home_buttons"
+        android:text="Other"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

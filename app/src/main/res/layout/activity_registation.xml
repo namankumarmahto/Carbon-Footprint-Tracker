@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login_registation_bg"
-    tools:context=".Registation">
+    tools:context=".personal.Registation">
 
     <TextView
         android:id="@+id/title_carbon_footprint_tracker"
