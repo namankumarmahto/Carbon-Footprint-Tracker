@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_registation_bg"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/dark_green"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Industry Registrartion Details"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="18dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Industry/Company name"
+        android:textSize="13dp">
+    </TextView>
+
+    <EditText
+
+        android:id="@+id/company_name"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/round_bg">
+
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type of industry(Manufacturing,IT,Chemical,etc.)"
+        android:textSize="13dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/type_of_industry"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/round_bg">
+
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Number (GSTIN,CIN,etc.)"
+        android:textSize="13dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/gst_no"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/round_bg">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Details"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="18dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registered Email ID"
+        android:textSize="13dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/round_bg">
+
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textSize="13dp">
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/Phone_no"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:background="@drawable/round_bg"
+        android:inputType="phone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Credentials"
+        android:textStyle="bold"
+        android:textSize="18dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username "
+        android:textSize="13dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/round_bg"></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password "
+        android:textSize="13dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/round_bg"></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password "
+        android:textSize="13dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/round_bg"></EditText>
+
+    <Button
+        android:id="@+id/registor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registor"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/industry_button">
+
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have Account?"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center">
+
+    </TextView>
+    <TextView
+        android:id="@+id/login_industry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="center">
+
+    </TextView>
+
+</LinearLayout>
