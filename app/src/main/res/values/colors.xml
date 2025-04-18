@@ -4,5 +4,15 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#FFA500</color>
     <color name="purple">#572DA0</color>
-    <color name="dark_green">#006400</color>
+
+    <color name="Soft_Green">#ECF8ED</color>
+    <color name="teal_700">#018786</color>
+    <color name="transport">#66BB6A</color>
+    <color name="electricity">#AED581</color>
+    <color name="food">#FFCDD2</color>
+    <color name="other">#C8E6C9</color>
+    <color name="light_green">#E5F7ED</color>
+    <color name="dark_green">#006644</color>
+
+
 </resources>

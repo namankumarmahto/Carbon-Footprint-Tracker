@@ -1,72 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_track"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="@color/Soft_Green"
+    >
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/dark_green"
-        android:elevation="4dp"
-        />
-
-    <!-- Example Child Views -->
+    <!-- Header -->
     <TextView
-        android:id="@+id/sampleText"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_green"
+        android:padding="16dp"
+        android:text="Carbon Footprint Tracker"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- Section title -->
+    <TextView
+        android:id="@+id/trackTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:paddingStart="8dp"
-        android:textSize="18dp"
-        android:text="Track Your Footprint" />
+        android:text="Track Your Footprint"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/dark_green"/>
 
-    <!-- First Button with Margin from Top -->
-
-    <!-- Second Button with Equal Gap -->
-    <Button
-        android:id="@+id/transpotation"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/trackDesc"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="470dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/home_buttons"
-        android:text="Transpotation"
-        android:textColor="#FFFFFF" />
-
-    <Button
-        android:id="@+id/electricity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:text="Monitor your carbon emissions from different sources."
+        android:layout_below="@id/trackTitle"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/home_buttons"
-        android:text="Electricity"
-        android:textColor="#FFFFFF" />
+        android:textColor="@android:color/black"/>
 
-    <!-- Third Button with Equal Gap -->
-    <Button
-        android:id="@+id/food"
+    <!-- Donut Chart -->
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/donutChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/trackDesc"
+        android:layout_margin="16dp"/>
+
+    <!-- Emission Categories Title -->
+    <TextView
+        android:id="@+id/emissionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emission Categories"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/donutChart"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/dark_green"/>
+
+    <!-- Emission Category Buttons -->
+    <LinearLayout
+        android:id="@+id/categoryList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/home_buttons"
-        android:text="Food"
-        android:textColor="#FFFFFF" />
+        android:orientation="vertical"
+        android:layout_below="@id/emissionTitle"
+        android:layout_margin="16dp">
 
-    <!-- Fourth Button with Margin from Bottom -->
-    <Button
-        android:id="@+id/other"
+        <Button
+            android:id="@+id/transpotaion"
+            android:text="  Transportation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_green"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/electricity"
+            android:text="  Electricity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/light_green"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:text="  Food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/light_green"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:text="  Other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/light_green"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/home_buttons"
-        android:text="Other"
-        android:textColor="#FFFFFF" />
-
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:background="@color/dark_green"
+        app:menu="@menu/bottom_navigation_menu"
+        app:labelVisibilityMode="labeled"
+        android:layout_marginTop="8dp"/>
+</RelativeLayout>

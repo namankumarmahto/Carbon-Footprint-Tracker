@@ -11,10 +11,13 @@
       <SelectionState runConfigName="Registation">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="Login">
+      <SelectionState runConfigName="Registation_Industry">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="Registation_Industry">
+      <SelectionState runConfigName="Transpotation">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="Home_host">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

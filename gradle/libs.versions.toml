@@ -14,6 +14,7 @@ lifecycleViewmodelKtx = "2.8.7"
 navigationFragment = "2.8.9"
 navigationUi = "2.8.9"
 firebaseDatabase = "21.0.0"
+mpandroidchart = "v3.1.0" #for graphs
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -29,6 +30,7 @@ lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-view
 navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
 navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+mpandroidchart = { module = "com.github.PhilJay:MPAndroidChart", version.ref = "mpandroidchart" } #for graphs
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

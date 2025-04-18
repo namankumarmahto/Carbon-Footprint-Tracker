@@ -11,4 +11,16 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name="vehicles">
+        <item>Car</item>
+        <item>Bus</item>
+        <item>Bike</item>
+    </string-array>
+
+    <string-array name="fuels">
+        <item>Petrol</item>
+        <item>Diesel</item>
+        <item>Electric</item>
+    </string-array>
 </resources>

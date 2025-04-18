@@ -50,9 +50,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation("mysql:mysql-connector-java:8.0.33")
-    implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
-    implementation("com.google.firebase:firebase-auth")
+
+    implementation(libs.mpandroidchart)
 
 
 }
