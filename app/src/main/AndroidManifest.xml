@@ -15,9 +15,11 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".personal.Home_host"
+            android:name=".industry.Dashboard_Industry"
             android:exported="true" />
-        <!-- Launcher Activity -->
+        <activity
+            android:name=".personal.Home_host"
+            android:exported="true" /> <!-- Launcher Activity -->
         <activity
             android:name=".ui.Launcher_page"
             android:exported="true">

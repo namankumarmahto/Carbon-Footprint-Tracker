@@ -56,7 +56,7 @@ public class Login_Industry extends AppCompatActivity {
                                 String storedPassword = userSnapshot.child("password").getValue(String.class);
                                 if (storedPassword != null && storedPassword.equals(password)) {
                                     Toast.makeText(Login_Industry.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(Login_Industry.this, Home_Industry.class));
+                                    startActivity(new Intent(Login_Industry.this, Dashboard_Industry.class));
                                     finish();
                                     return;
                                 }
