@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "55614374506",
+    "project_id": "carbon-footprint-tracker-cc06a",
+    "storage_bucket": "carbon-footprint-tracker-cc06a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55614374506:android:4326e75b582658cc6ec013",
+        "android_client_info": {
+          "package_name": "com.example.carbonfootprinttracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnrd1QoouvpzKvgSNlpt1Y3OQ5hbhYc3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
