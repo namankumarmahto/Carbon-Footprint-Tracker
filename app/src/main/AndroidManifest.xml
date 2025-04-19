@@ -15,6 +15,12 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".personal.Food_personal"
+            android:exported="false" />
+        <activity
+            android:name=".personal.Electricity_personal"
+            android:exported="true" />
+        <activity
             android:name=".industry.Dashboard_Industry"
             android:exported="true" />
         <activity

@@ -48,12 +48,12 @@ public class Home extends Fragment {
             }
         });
 
-//        electricityButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(getActivity(), ElectricityActivity.class)); // Ensure this Activity exists
-//            }
-//        });
+        electricityButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), Electricity_personal.class)); // Ensure this Activity exists
+            }
+        });
 //
 //        foodButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
