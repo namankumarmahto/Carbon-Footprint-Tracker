@@ -35,7 +35,7 @@ public class Home extends Fragment {
         donutChart = view.findViewById(R.id.donutChart);
         transportationButton = view.findViewById(R.id.transpotaion);
         electricityButton = view.findViewById(R.id.electricity); // Ensure IDs are correct
-//        foodButton = view.findViewById(R.id.food);
+        foodButton = view.findViewById(R.id.food);
 //        otherButton = view.findViewById(R.id.other);
 
         setupDonutChart();
@@ -54,13 +54,13 @@ public class Home extends Fragment {
                 startActivity(new Intent(getActivity(), Electricity_personal.class)); // Ensure this Activity exists
             }
         });
-//
-//        foodButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(getActivity(), FoodActivity.class)); // Ensure this Activity exists
-//            }
-//        });
+
+        foodButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), Food_personal.class)); // Ensure this Activity exists
+            }
+        });
 //
 //        otherButton.setOnClickListener(new View.OnClickListener() {
 //            @Override

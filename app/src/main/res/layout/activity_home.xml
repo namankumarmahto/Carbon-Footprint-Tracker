@@ -93,6 +93,7 @@
             android:textColor="@android:color/black"/>
 
         <Button
+            android:id="@+id/food"
             android:text="  Food"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
